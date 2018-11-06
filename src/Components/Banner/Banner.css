@@ -1,0 +1,20 @@
+.myJumbotron {
+  height: -webkit-fill-available;
+  background: white;
+  background-image: url('../../images/logo.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  padding: 100px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+h1 {
+  font : normal 300 64px/1 'Josefin Sans', sans-serif;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font : normal 300 36px/1 'Josefin Sans', sans-serif;
+}

@@ -1,0 +1,42 @@
+.menu {
+  display: flex;
+}
+
+.menuItem {
+  transition: .5s;
+  margin: 15px;
+  height: 50vh;
+  width: 100%;
+}
+
+.menuItem:hover {
+  transform: scale(1.1);
+}
+
+.myRow {
+  display: flex;
+  justify-content: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+
+.title {
+  font : normal 300 64px/1 'Josefin Sans', sans-serif;
+  height: 50vh;
+  text-align: center;
+  line-height: 50vh;
+  font-size: 30px;
+  color: #000;
+  text-shadow: 1px 1px #ff0033;
+  transition: .5s;
+
+}
+
+.title:hover {
+  font-size: 36px;
+}
+
+.custom-modal {
+  width: 99%;
+}
