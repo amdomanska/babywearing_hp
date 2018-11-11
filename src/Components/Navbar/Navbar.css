@@ -1,0 +1,23 @@
+.navbar-default {
+  background-image: none;
+  background-color: green;
+}
+
+.navbar-default .navbar-nav > li,
+.navbar-default .navbar-nav>li:hover {
+  background-color: red;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.navbar-default .navbar-nav>li:active {
+  background-color: white;
+  color: red;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}

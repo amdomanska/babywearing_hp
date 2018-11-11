@@ -8,14 +8,18 @@ export default class Banner extends Component {
     console.log(this.props)
 
     return (
-      <Grid>
-        <Row>
+      <Grid className='aboutMeComponent Component'>
+        <Col md={8} mdOffset={4}>
             {
               this.props.aboutMe.paragraphs.map((par,idx) => (
-                <Col md={4} key={idx}><p>{par}</p></Col>
+                <Row key={idx}>
+                  <p>
+                    {par}
+                  </p>
+                </Row>
               ))
             }
-        </Row>
+        </Col>
       </Grid>
     );
   }

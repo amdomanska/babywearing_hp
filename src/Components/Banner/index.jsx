@@ -6,7 +6,7 @@ import './Banner.css'
 export default class Banner extends Component {
   render() {
     return (
-        <Jumbotron className='myJumbotron'>
+        <Jumbotron className='myJumbotron Component'>
           <Grid>
           <Row>
             <Col style={{

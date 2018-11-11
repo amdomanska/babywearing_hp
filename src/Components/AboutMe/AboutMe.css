@@ -1,6 +1,15 @@
-
-
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+.aboutMeComponent {
+  height: 93vh;
+  margin-left: 40px;
+  padding-right: 40px;
+  background: white;
+  background-image: url('../../images/portrait.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
 
 h3 {
   font : normal 300 24px/1 'Josefin Sans', sans-serif;
@@ -10,4 +19,8 @@ h3 {
 
 p {
   font : normal 300 16px/1 'Josefin Sans', sans-serif;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
 }
