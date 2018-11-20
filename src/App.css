@@ -1,59 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .Component {
   padding: 100px;
-  height: 70vh;
 }
 
-.myTabs, .myTabs:hover {
-  color: black;
-  font-weight: bold;
+.navbar-default {
+  margin-bottom: 0;
 }
 
-ul.nav.nav-tabs {
-  background-image: url('./images/pattern.png');
-  background-size: cover;
-}
+/* ul.nav.nav-tabs  {
+  background-color: green;
+} */
 
-.myTabs>li {
-  float: right;
-  width: 20vw;
-  height: 10vh;
-}
-
-.myTabs>li.logo,
-.myTabs>li.logo.active, 
-.myTabs>li.logo>a,
-.myTabs>li.logo.active>a, 
-.myTabs>li.logo>a:focus, 
-.myTabs>li.logo.active>a:focus, 
-.myTabs>li.logo>a:hover,
-.myTabs>li.logo.active>a:hover {
-  width: 55vw;
-  font-size: 4vh;
-  float: left;
-  background-color: transparent;
-  border-style: none;
-  color: black;
-  font-weight: bold;
-  text-shadow: .5px .5px white;
-}
-
-.myTabs>li.mytab>a,
-.myTabs>li.myTab>a:focus, 
-.myTabs>li.myTab>a:hover {
-  background-color: transparent;
-  border-style: none;
-  color: black;
-  font-weight: bold;
-  text-shadow: .5px .5px white;
-  outline: none;
-}
-
-.myTabs>li.mytab.active>a, 
-.myTabs>li.myTab.active>a:focus, 
-.myTabs>li.myTab.active>a:hover {
-  background-color: white;
+.nav>li>a,
+.nav>li>a:focus, 
+.nav>li>a:hover {
   color: red;
-  outline: none;
+  background-color: transparent;
+  border-style: none;
+  color: black;
+  font-weight: bold;
+  text-shadow: .5px .5px white;
+}
+
+.nav>li.active>a, 
+.nav>li.active>a:focus, 
+.nav>li.active>a:hover {
+  color: red;
 }

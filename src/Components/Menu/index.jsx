@@ -32,7 +32,7 @@ export default class Menu extends Component {
       else if (this.state.workshops) {
         this.setState({why: true, shop: false, workshops: false})
       }
-    }, 3000);
+    }, 100000);
   }
 
   handleClickRight = () => {

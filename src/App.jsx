@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tab, Row, Col, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Image, Tab, Row, Col, Nav, NavItem } from 'react-bootstrap';
 
 import './App.css';
 
@@ -9,28 +9,28 @@ import Banner from './Components/Banner'
 import AboutMe from './Components/AboutMe'
 import Menu from './Components/Menu'
 
+import logo from './images/logomini.png'
+
 class App extends Component {
   render() {
     return (
       <div>
-        <Tab.Container defaultActiveKey="first">
-          <Row>
-            <Col sm={12}>
-              <Nav bsStyle="tabs" className='myTabs'>
-                <NavItem eventKey="first" className='myTab'>Menu</NavItem>
-                <NavItem eventKey="second" className='myTab'>About Me</NavItem>
-                <NavItem eventKey="logo" className='logo'>Agnieszka Mitas-Syrek</NavItem>
-              </Nav>
-            </Col>
-            <Col sm={12}>
-              <Tab.Content animation>
-                <Tab.Pane eventKey="first"></Tab.Pane>
-                <Tab.Pane eventKey="second"><AboutMe {...props} /></Tab.Pane>
-                <Tab.Pane eventKey="logo"><Banner {...props} /></Tab.Pane>
-              </Tab.Content>
-            </Col>
-          </Row>
-        </Tab.Container>
+        <Navbar collapseOnSelect>
+          <a href='/'>
+            <Image className='logo' 
+              src={logo} 
+              responsive 
+              style={{maxHeight: '9vh', position: 'absolute', left: '5px'}}
+            />
+          </a>
+          <Nav bsStyle="tabs" pullRight>
+            <NavItem href='/contact'>Contact</NavItem>
+            <NavItem href='/shop'>Shop</NavItem>
+            <NavItem href='/workshops'>Workshops</NavItem>
+            <NavItem href='/why'>Why babywearing?</NavItem>
+            <NavItem href='/aboutme'>About Me</NavItem>
+          </Nav>
+        </Navbar>
         <Menu />
       </div>
     )
