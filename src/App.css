@@ -18,10 +18,17 @@ ul.nav.nav-tabs {
 .myTabs>li {
   float: right;
   width: 20vw;
-  height: 8vh;
+  height: 10vh;
 }
 
-.myTabs>li.logo, .myTabs>li.logo>a, .myTabs>li.logo>a:focus, .myTabs>li.logo>a:hover, .logo>a:active {
+.myTabs>li.logo,
+.myTabs>li.logo.active, 
+.myTabs>li.logo>a,
+.myTabs>li.logo.active>a, 
+.myTabs>li.logo>a:focus, 
+.myTabs>li.logo.active>a:focus, 
+.myTabs>li.logo>a:hover,
+.myTabs>li.logo.active>a:hover {
   width: 55vw;
   font-size: 4vh;
   float: left;
@@ -32,10 +39,21 @@ ul.nav.nav-tabs {
   text-shadow: .5px .5px white;
 }
 
-.nav>li>a, .nav>li>a:focus, .nav>li>a:hover, .nav>li>a:hover, .myTab>a:active.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+.myTabs>li.mytab>a,
+.myTabs>li.myTab>a:focus, 
+.myTabs>li.myTab>a:hover {
   background-color: transparent;
   border-style: none;
   color: black;
   font-weight: bold;
   text-shadow: .5px .5px white;
+  outline: none;
+}
+
+.myTabs>li.mytab.active>a, 
+.myTabs>li.myTab.active>a:focus, 
+.myTabs>li.myTab.active>a:hover {
+  background-color: white;
+  color: red;
+  outline: none;
 }
